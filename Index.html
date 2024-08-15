@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Práctico de Opción Múltiple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            font-size: 24px;
+            margin-top: 30px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Parte 1: Oración Simple y Estructura del Sujeto</h1>
+
+    <form id="examForm">
+        <!-- Questions 1-50 -->
+        <div class="question">
+            <p>1. ¿Cuál es el núcleo del sujeto en la oración "El gato negro duerme en la silla"?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) Negro</label>
+                <label><input type="radio" name="q1" value="b"> b) Gato</label>
+                <label><input type="radio" name="q1" value="c"> c) Duerme</label>
+                <label><input type="radio" name="q1" value="d"> d) Silla</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. ¿Qué es una oración simple?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) Una oración con más de un sujeto</label>
+                <label><input type="radio" name="q2" value="b"> b) Una oración con múltiples verbos</label>
+                <label><input type="radio" name="q2" value="c"> c) Una oración con un solo sujeto y un solo predicado</label>
+                <label><input type="radio" name="q2" value="d"> d) Una oración con más de una proposición</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. ¿Cuál de las siguientes opciones es un modificador directo del núcleo del sujeto?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) Adjetivo</label>
+                <label><input type="radio" name="q3" value="b"> b) Verbo</label>
+                <label><input type="radio" name="q3" value="c"> c) Complemento directo</label>
+                <label><input type="radio" name="q3" value="d"> d) Pronombre</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. ¿Qué función desempeña el artículo en una oración?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) Complemento del predicado</label>
+                <label><input type="radio" name="q4" value="b"> b) Modificador del sustantivo</label>
+                <label><input type="radio" name="q4" value="c"> c) Núcleo del sujeto</label>
+                <label><input type="radio" name="q4" value="d"> d) Núcleo del predicado</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. ¿Qué tipo de palabra siempre actúa como núcleo del sujeto?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) Verbo</label>
+                <label><input type="radio" name="q5" value="b"> b) Sustantivo</label>
+                <label><input type="radio" name="q5" value="c"> c) Adjetivo</label>
+                <label><input type="radio" name="q5" value="d"> d) Adverbio</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. Cuál de las siguientes palabras puede ser un núcleo del sujeto?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> a) Perro</label>
+                <label><input type="radio" name="q6" value="b"> b) Corriendo</label>
+                <label><input type="radio" name="q6" value="c"> c) Amable</label>
+                <label><input type="radio" name="q6" value="d"> d) Debajo</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Qué es un complemento adnominal?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> a) Una oración compuesta</label>
+                <label><input type="radio" name="q7" value="b"> b) Un verbo en una oración</label>
+                <label><input type="radio" name="q7" value="c"> c) Un modificador del sustantivo que incluye una preposición</label>
+                <label><input type="radio" name="q7" value="d"> d) Un pronombre</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8.  En la oración "Los estudiantes aplicados aprobaron el examen", ¿cuál es el núcleo del sujeto?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> a) Estudiantes</label>
+                <label><input type="radio" name="q8" value="b"> b) Examen</label>
+                <label><input type="radio" name="q8" value="c"> c) Aplicados</label>
+                <label><input type="radio" name="q8" value="d"> d) Aprobaron</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. ¿Cuál es el modificador adjetivo en la oración "La flor roja es hermosa"?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> a) Flor</label>
+                <label><input type="radio" name="q9" value="b"> b) Hermosa</label>
+                <label><input type="radio" name="q9" value="c"> c) Roja</label>
+                <label><input type="radio" name="q9" value="d"> d) Es</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. ¿Qué tipo de modificador es "mi amiga" en la oración "Josefina, mi amiga, canta en el coro"?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> a) Aposición</label>
+                <label><input type="radio" name="q10" value="b"> b) Complemento directo</label>
+                <label><input type="radio" name="q10" value="c"> c) Modificador adnominal</label>
+                <label><input type="radio" name="q10" value="d"> d) Núcleo del predicado</label>
+            </div>
+        </div>
+
+
+        <h1>Parte 2: Estructura del Predicado y Tipos de Oraciones</h1>
+
+
+        <div class="question">
+            <p>11. ¿Qué es el núcleo del predicado en la oración "El perro ladró fuerte"?</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> a) Ladró</label>
+                <label><input type="radio" name="q11" value="b"> b) Fuerte</label>
+                <label><input type="radio" name="q11" value="c"> c) Perro</label>
+                <label><input type="radio" name="q11" value="d"> d) El</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>12. ¿Qué función tiene el complemento directo en una oración?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> a) Describe al sujeto</label>
+                <label><input type="radio" name="q12" value="b"> b) Recibe la acción del verbo</label>
+                <label><input type="radio" name="q12" value="c"> c) Modifica al sustantivo</label>
+                <label><input type="radio" name="q12" value="d"> d) Describe el lugar de la acción</label>
+            </div>
+        </div>
+
+
+        <div class="question">
+            <p>13. ¿Cuál de las siguientes oraciones tiene un complemento directo?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> a) Ana escribió una carta.</label>
+                <label><input type="radio" name="q13" value="b"> b) Ana salió temprano.</label>
+                <label><input type="radio" name="q13" value="c"> c) Ana es mi amiga.</label>
+                <label><input type="radio" name="q13" value="d"> d) Ana estudia mucho.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>14. En la oración "El profesor enseñó la lección a los estudiantes", ¿cuál es el objeto indirecto?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> a) Profesor</label>
+                <label><input type="radio" name="q14" value="b"> b) A los estudiantes</label>
+                <label><input type="radio" name="q14" value="c"> c) La lección</label>
+                <label><input type="radio" name="q14" value="d"> d) Enseñó</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>15. ¿Qué es un complemento circunstancial?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> a) Una palabra o grupo de palabras que expresa las circunstancias de la acción verbal</label>
+                <label><input type="radio" name="q15" value="b"> b) Un verbo auxiliar</label>
+                <label><input type="radio" name="q15" value="c"> c) El núcleo del sujeto</label>
+                <label><input type="radio" name="q15" value="d"> d) Un adjetivo calificativo</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>16. ¿Cuál es el complemento circunstancial en la oración "María corrió rápido"?</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> a) María</label>
+                <label><input type="radio" name="q16" value="b"> b) Corrió</label>
+                <label><input type="radio" name="q16" value="c"> c) Rápido</label>
+                <label><input type="radio" name="q16" value="d"> d) Ninguno</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>17. ¿Qué tipo de oración es "A pesar de la lluvia, salí a caminar"?</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> a) Oración compuesta por subordinación</label>
+                <label><input type="radio" name="q17" value="b"> b) Oración simple</label>
+                <label><input type="radio" name="q17" value="c"> c) Oración compuesta por coordinación</label>
+                <label><input type="radio" name="q17" value="d"> d) Oración yuxtapuesta</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>18. ¿Qué tipo de nexo une oraciones subordinadas?</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> a) Conjunción subordinante</label>
+                <label><input type="radio" name="q18" value="b"> b) Conjunción copulativa</label>
+                <label><input type="radio" name="q18" value="c"> c) Adverbio</label>
+                <label><input type="radio" name="q18" value="d"> d) Preposición</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>19. En la oración "Los niños juegan mientras las niñas estudian", ¿qué tipo de oración es?</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> a) Yuxtapuesta</label>
+                <label><input type="radio" name="q19" value="b"> b) Coordinada</label>
+                <label><input type="radio" name="q19" value="c"> c) Simple</label>
+                <label><input type="radio" name="q19" value="d"> d) Compleja</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>20. ¿Cuál es la diferencia entre una oración subordinada y una coordinada?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> a) Una oración compuesta</label>
+                <label><input type="radio" name="q20" value="b"> b) La coordinada depende de la principal</label>
+                <label><input type="radio" name="q20" value="c"> c) La subordinada está compuesta por dos sujetos</label>
+                <label><input type="radio" name="q20" value="d"> d) La coordinada no tiene núcleo del predicado</label>
+            </div>
+        </div>
+
+
+        <h1>Parte 3: Tipos de Oraciones Compuestas</h1>
+
+        <div class="question">
+            <p>21. ¿Qué tipo de oración compuesta se utiliza en "Voy al cine y luego cenaré"?</p>
+            <div class="options">
+                <label><input type="radio" name="q21" value="a"> a) Una oración compuesta</label>
+                <label><input type="radio" name="q21" value="b"> b) Subordinada</label>
+                <label><input type="radio" name="q21" value="c"> c) Yuxtapuesta</label>
+                <label><input type="radio" name="q21" value="d"> d) Simple</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>22. ¿Qué tipo de oración compuesta es "Estudio mucho, pero no obtengo buenas calificaciones"?</p>
+            <div class="options">
+                <label><input type="radio" name="q22" value="a"> a) Coordinada adversativa</label>
+                <label><input type="radio" name="q22" value="b"> b) Subordinada</label>
+                <label><input type="radio" name="q22" value="c"> c) Yuxtapuesta</label>
+                <label><input type="radio" name="q22" value="d"> d) Simple</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>23. En la oración "El tren partió; la ciudad quedó en silencio", ¿qué tipo de relación existe entre las oraciones?</p>
+            <div class="options">
+                <label><input type="radio" name="q23" value="a"> a) Yuxtaposición</label>
+                <label><input type="radio" name="q23" value="b"> b) Subordinación</label>
+                <label><input type="radio" name="q23" value="c"> c) Coordinación</label>
+                <label><input type="radio" name="q23" value="d"> d) Ninguna</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>24. ¿Qué es una oración subordinada sustantiva?</p>
+            <div class="options">
+                <label><input type="radio" name="q24" value="a"> a) Una oración que describe el sujeto</label>
+                <label><input type="radio" name="q24" value="b"> b) Una oración que sustituye al sujeto o al objeto directo de la oración principal</label>
+                <label><input type="radio" name="q24" value="c"> c) Una oración que añade información sobre el lugar de la acción</label>
+                <label><input type="radio" name="q24" value="d"> d) Una oración compuesta por coordinación</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>25. ¿Cuál es la función de una oración subordinada adjetiva?</p>
+            <div class="options">
+                <label><input type="radio" name="q25" value="a"> a) Modificar al verbo</label>
+                <label><input type="radio" name="q25" value="b"> b) Modificar al sustantivo</label>
+                <label><input type="radio" name="q25" value="c"> c) Ser el núcleo del predicado</label>
+                <label><input type="radio" name="q25" value="d"> d) Actuar como un complemento circunstancial</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>26. ¿Qué tipo de oración es "Espero que puedas venir"?</p>
+            <div class="options">
+                <label><input type="radio" name="q26" value="a"> a) Yuxtapuesta</label>
+                <label><input type="radio" name="q26" value="b"> b) Coordinada</label>
+                <label><input type="radio" name="q26" value="c"> c) Subordinada</label>
+                <label><input type="radio" name="q26" value="d"> d) Simple</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>27. ¿Cuál es el nexo en la oración "Aunque hace frío, saldré a correr"?</p>
+            <div class="options">
+                <label><input type="radio" name="q27" value="a"> a) Aunque</label>
+                <label><input type="radio" name="q27" value="b"> b) Hace</label>
+                <label><input type="radio" name="q27" value="c"> c) Correr</label>
+                <label><input type="radio" name="q27" value="d"> d) Saldré</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>28. ¿Cuál es el tipo de oración compuesta en "Espera un momento; ya vuelvo"?</p>
+            <div class="options">
+                <label><input type="radio" name="q28" value="a"> a) Yuxtapuesta</label>
+                <label><input type="radio" name="q28" value="b"> b) Subordinada</label>
+                <label><input type="radio" name="q28" value="c"> c) Coordinada</label>
+                <label><input type="radio" name="q28" value="d"> d) Simple</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>29. ¿Qué tipo de oración es "Vino porque lo necesitábamos"?</p>
+            <div class="options">
+                <label><input type="radio" name="q29" value="a"> a) Yuxtapuesta</label>
+                <label><input type="radio" name="q29" value="b"> b) Subordinada causal</label>
+                <label><input type="radio" name="q29" value="c"> c) Coordinada adversativa</label>
+                <label><input type="radio" name="q29" value="d"> d) Simple</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>30. ¿Cuál es la relación entre las oraciones en "Estudio para aprobar el examen"?</p>
+            <div class="options">
+                <label><input type="radio" name="q30" value="a"> a) Coordinación</label>
+                <label><input type="radio" name="q30" value="b"> b) Subordinación final</label>
+                <label><input type="radio" name="q30" value="c"> c) Yuxtaposición</label>
+                <label><input type="radio" name="q30" value="d"> d) Disyunción</label>
+            </div>
+        </div>
+
+
+        <h1>Parte 4: Complementos y Modificadores</h1>
+
+
+        <div class="question">
+            <p>31. ¿Cuál es la función del complemento indirecto en la oración "Le entregué el libro a Marta"?</p>
+            <div class="options">
+                <label><input type="radio" name="q31" value="a"> a) Modificar al sujeto</label>
+                <label><input type="radio" name="q31" value="b"> b) Indicar quién recibe la acción del verbo</label>
+                <label><input type="radio" name="q31" value="c"> c) Describir el lugar de la acción</label>
+                <label><input type="radio" name="q31" value="d"> d) Actuar como el núcleo del predicado</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>32. ¿Qué tipo de palabra es "rápido" en la oración "El coche rápido ganó la carrera"?</p>
+            <div class="options">
+                <label><input type="radio" name="q32" value="a"> a) Sustantivo</label>
+                <label><input type="radio" name="q32" value="b"> b) Verbo</label>
+                <label><input type="radio" name="q32" value="c"> c) Adjetivo</label>
+                <label><input type="radio" name="q32" value="d"> d) Adverbio</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>33. ¿Qué tipo de palabra es "inteligentemente" en la oración "Resolví el problema inteligentemente"?</p>
+            <div class="options">
+                <label><input type="radio" name="q33" value="a"> a) Sustantivo</label>
+                <label><input type="radio" name="q33" value="b"> b) Verbo</label>
+                <label><input type="radio" name="q33" value="c"> c) Adjetivo</label>
+                <label><input type="radio" name="q33" value="d"> d) Un pronombre</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>34. En la oración "Me gusta el libro de aventuras", ¿cuál es el complemento del sustantivo?</p>
+            <div class="options">
+                <label><input type="radio" name="q34" value="a"> a) Me</label>
+                <label><input type="radio" name="q34" value="b"> b) Libro</label>
+                <label><input type="radio" name="q34" value="c"> c) De aventuras</label>
+                <label><input type="radio" name="q34" value="d"> d) Gusta</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>35. ¿Cuál es el tipo de modificador en "El gran libro de historia"?</p>
+            <div class="options">
+                <label><input type="radio" name="q35" value="a"> a) Adjetivo calificativo y complemento adnominal</label>
+                <label><input type="radio" name="q35" value="b"> b) Verbo auxiliar</label>
+                <label><input type="radio" name="q35" value="c"> c) Complemento indirecto</label>
+                <label><input type="radio" name="q35" value="d"> d) Predicado nominal</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>36. ¿Qué tipo de palabra es "tarde" en la oración "Llegamos tarde a la reunión"?</p>
+            <div class="options">
+                <label><input type="radio" name="q36" value="a"> a) Sustantivo</label>
+                <label><input type="radio" name="q36" value="b"> b) Verbo</label>
+                <label><input type="radio" name="q36" value="c"> c) Adjetivo</label>
+                <label><input type="radio" name="q36" value="d"> d) Adverbio</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>37. ¿Cuál es el núcleo del predicado en "Ellos están felices"?</p>
+            <div class="options">
+                <label><input type="radio" name="q37" value="a"> a) Ellos</label>
+                <label><input type="radio" name="q37" value="b"> b) Están</label>
+                <label><input type="radio" name="q37" value="c"> c) Felices</label>
+                <label><input type="radio" name="q37" value="d"> d) Ninguno</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>38. En la oración "Los niños corren en el parque", ¿qué tipo de complemento es "en el parque"?</p>
+            <div class="options">
+                <label><input type="radio" name="q38" value="a"> a) Complemento circunstancial de lugar</label>
+                <label><input type="radio" name="q38" value="b"> b) Complemento indirecto</label>
+                <label><input type="radio" name="q38" value="c"> c) Complemento directo</label>
+                <label><input type="radio" name="q38" value="d"> d) Modificador del sujeto</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>39. ¿Qué tipo de modificador es "delicioso" en la oración "El pastel delicioso se terminó"?</p>
+            <div class="options">
+                <label><input type="radio" name="q39" value="a"> a) Complemento directo</label>
+                <label><input type="radio" name="q39" value="b"> b) Adjetivo calificativo </label>
+                <label><input type="radio" name="q39" value="c"> c) Complemento circunstancial</label>
+                <label><input type="radio" name="q39" value="d"> d) Verbo</label>
+            </div>
+        </div>
+
+    <div class="question">
+            <p>40. En la oración "La película fue emocionante", ¿cuál es el núcleo del predicado?</p>
+            <div class="options">
+                <label><input type="radio" name="q40" value="a"> a) Película</label>
+                <label><input type="radio" name="q40" value="b"> b) Fue</label>
+                <label><input type="radio" name="q40" value="c"> c) Emocionante </label>
+                <label><input type="radio" name="q40" value="d"> d) La</label>
+            </div>
+        </div>
+    
+        <h1>Parte 5: Descripción y Narración</h1>
+
+        <div class="question">
+            <p>41. ¿Qué es la descripción en un texto?</p>
+            <div class="options">
+                <label><input type="radio" name="q41" value="a"> a) Una técnica que consiste en detallar las características de personas, objetos, lugares o situaciones</label>
+                <label><input type="radio" name="q41" value="b"> b) Un relato de hechos o sucesos</label>
+                <label><input type="radio" name="q41" value="c"> c) Una estructura narrativa con principio y final</label>
+                <label><input type="radio" name="q41" value="d"> d) Una comparación entre dos ideas</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>42. ¿Cuál de las siguientes opciones es un ejemplo de descripción?</p>
+            <div class="options">
+                <label><input type="radio" name="q42" value="a"> a) El atardecer era hermoso, con un cielo teñido de tonos rosados y naranjas.</label>
+                <label><input type="radio" name="q42" value="b"> b) María salió corriendo de la casa y se dirigió al parque.</label>
+                <label><input type="radio" name="q42" value="c"> c) Juan llegó tarde a la reunión y se disculpó con todos. </label>
+                <label><input type="radio" name="q42" value="d"> d) Decidimos ir al cine y luego cenar en un restaurante./label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>43.  ¿Qué función cumple la narración en un texto?</p>
+            <div class="options">
+                <label><input type="radio" name="q43" value="a"> a) Describir la apariencia física de un personaje</label>
+                <label><input type="radio" name="q43" value="b"> b) Contar una serie de eventos o hechos en un orden determinado</label>
+                <label><input type="radio" name="q43" value="c"> c) Definir conceptos y términos</label>
+                <label><input type="radio" name="q43" value="d"> d) Explicar las características de un objeto</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>44. ¿Cuál de los siguientes enunciados corresponde a una narración?</p>
+            <div class="options">
+                <label><input type="radio" name="q44" value="a"> a) El coche era rojo, con llantas negras y un interior de cuero.</label>
+                <label><input type="radio" name="q44" value="b"> b) El pasado sábado, Juan se levantó temprano, desayunó rápidamente y salió a correr por el parque.</label>
+                <label><input type="radio" name="q44" value="c"> c) El salón de clases estaba lleno de estudiantes. </label>
+                <label><input type="radio" name="q44" value="d"> d) La montaña se alzaba imponente frente a nosotros.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>45. ¿Qué característica es esencial en un texto descriptivo?</p>
+            <div class="options">
+                <label><input type="radio" name="q45" value="a"> a) Detallar las cualidades y características de algo o alguien</label>
+                <label><input type="radio" name="q45" value="b"> b) Relatar hechos cronológicamente</label>
+                <label><input type="radio" name="q45" value="c"> c) Explicar cómo funciona algo</label>
+                <label><input type="radio" name="q45" value="d"> d) Convencer al lector sobre una idea</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>46. ¿Qué tipo de lenguaje se utiliza principalmente en una descripción?</p>
+            <div class="options">
+                <label><input type="radio" name="q46" value="a"> a) Lenguaje figurativo y adjetivos</label>
+                <label><input type="radio" name="q46" value="b"> b) Lenguaje técnico y formal</label>
+                <label><input type="radio" name="q46" value="c"> c) Verbos de acción</label>
+                <label><input type="radio" name="q46" value="d"> d) Conjunciones y nexos</label>
+            </div>
+        </div>
+
+
+        <div class="question">
+            <p>47. En un texto narrativo, ¿qué elementos son fundamentales?</p>
+            <div class="options">
+                <label><input type="radio" name="q47" value="a"> a) Personajes, trama y ambiente</label>
+                <label><input type="radio" name="q48" value="b"> b) Adjetivos, comparaciones y metáforas</label>
+                <label><input type="radio" name="q47" value="c"> c) Definiciones y explicaciones </label>
+                <label><input type="radio" name="q47" value="d"> d) Ejemplos y citas</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>48. ¿Cuál de las siguientes opciones describe una narración cronológica?</p>
+            <div class="options">
+                <label><input type="radio" name="q48" value="a"> a) Primero me desperté, luego desayuné, y finalmente salí de casa.</label>
+                <label><input type="radio" name="q48" value="b"> b) El día estaba soleado, con una brisa suave y fresca.</label>
+                <label><input type="radio" name="q48" value="c"> c) La puerta era de madera oscura y antigua.</label>
+                <label><input type="radio" name="q48" value="d"> d) El cuadro en la pared era una obra de arte moderna.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>49. ¿Cuál es la diferencia principal entre narración y descripción?</p>
+            <div class="options">
+                <label><input type="radio" name="q49" value="a"> a) La narración detalla características, mientras que la descripción cuenta una historia.</label>
+                <label><input type="radio" name="q49" value="b"> b) La narración relata hechos y la descripción detalla características.</label>
+                <label><input type="radio" name="q49" value="c"> c) La narración es objetiva y la descripción es subjetiva.</label>
+                <label><input type="radio" name="q49" value="d"> d) No existe ninguna diferencia entre ambas.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>50. ¿Qué tipo de texto es "El viento soplaba con fuerza, agitando las hojas de los árboles, mientras la lluvia golpeaba las ventanas"?</p>
+            <div class="options">
+                <label><input type="radio" name="q50" value="a"> a) Narrativo</label>
+                <label><input type="radio" name="q50" value="b"> b) Descriptivo</label>
+                <label><input type="radio" name="q50" value="c"> c) Expositivo</label>
+                <label><input type="radio" name="q50" value="d"> d) Argumentativo</label>
+            </div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="evaluateExam()">Enviar Examen</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function evaluateExam() {
+            const answers = {
+                q1: "b",   // Question 1 correct answer
+                q2: "c",   // Question 2 correct answer
+                q3: "a",   // Question 3 correct answer
+                q4: "b",   // Question 4 correct answer
+                q5: "b",   // Question 5 correct answer
+                q6: "a",   // Question 50 correct answer
+                q7: "c",   // Question 50 correct answer
+                q8: "a",   // Question 50 correct answer
+                q9: "c",   // Question 50 correct answer
+                q10: "a",   // Question 50 correct answer
+                q11: "a",   // Question 50 correct answer
+                q12: "b",   // Question 50 correct answer
+                q13: "a",   // Question 50 correct answer
+                q14: "b",   // Question 50 correct answer
+                q15: "a",   // Question 50 correct answer
+                q16: "c",   // Question 50 correct answer
+                q17: "a",   // Question 50 correct answer
+                q18: "a",   // Question 50 correct answer
+                q19: "b",   // Question 50 correct answer
+                q20: "a",   // Question 50 correct answer
+                q21: "a",   // Question 50 correct answer
+                q22: "a",   // Question 50 correct answer
+                q23: "a",   // Question 50 correct answer
+                q24: "b",   // Question 50 correct answer
+                q25: "b",   // Question 50 correct answer
+                q26: "c",   // Question 50 correct answer
+                q27: "a",   // Question 50 correct answer
+                q28: "a",   // Question 50 correct answer
+                q29: "b",   // Question 50 correct answer
+                q30: "b",   // Question 50 correct answer
+                q31: "b",   // Question 50 correct answer
+                q32: "c",   // Question 50 correct answer
+                q33: "d",   // Question 50 correct answer
+                q34: "c",   // Question 50 correct answer
+                q35: "a",   // Question 50 correct answer
+                q36: "d",   // Question 50 correct answer
+                q37: "b",   // Question 50 correct answer
+                q38: "a",   // Question 50 correct answer
+                q39: "b",   // Question 50 correct answer
+                q40: "c",   // Question 50 correct answer
+                q41: "a",   // Question 50 correct answer
+                q42: "a",   // Question 50 correct answer
+                q43: "b",   // Question 50 correct answer
+                q44: "b",   // Question 50 correct answer
+                q45: "a",   // Question 50 correct answer
+                q46: "a",   // Question 50 correct answer
+                q47: "a",   // Question 50 correct answer
+                q48: "a",   // Question 50 correct answer
+                q49: "b",   // Question 50 correct answer
+                q50: "b"   // Question 50 correct answer
+            };
+            
+            let score = 0;
+            const form = document.forms["examForm"];
+            
+            for (let question in answers) {
+                if (form[question].value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = "Tu puntaje es: " + score + " de 50.";
+        }
+    </script>
+
+</body>
+</html>
